@@ -55,7 +55,7 @@ Follow these steps to get started:
   # Now copy it into our base image.
   FROM gcr.io/distroless/base
   COPY --from=build /go/bin/app /
-  CMD ["/app"]
+  ENTRYPOINT ["/app"]
   ```
 
 You can find other examples here:
